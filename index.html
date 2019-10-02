@@ -1,85 +1,164 @@
 <!doctype html>
 <html lang="en">
-    <head>
-        <title>Hello HTML World!</title>
-    </head>
-    <body>
-        <h1>My first HTML page.</h1>
-        <h3>TOO EASY!!!</h3>
 
+<head>
+    <title>Hello HTML World!</title>
+    <script src="js/index.js"></script>
+    <link href="CSS/index.css" type="text/css" rel="stylesheet">
+</head>
+
+<body>
+    <h1>My first HTML page.</h1>
+    <h3>TOO EASY!!!</h3>
+
+    <div>
+        <h3>Drop-down lists</h3>
+        <select>
+            <option value="100">Option 1</option>
+            <option value="200">Option 2</option>
+            <option value="300">Option 3</option>
+        </select>
+    </div>
+    <div>
+        <h3>Using the <code>input</code> tag</h3>
+        <input id="txt" size="40" maxlength="30" type="text" value="This is the default text">
+        <br>
+        <input id="nbr" type="number" value="7">
+        <br>
+        Password: <input id="pwd" type="password" value="mypassword">
+    </div>
+    <div>
+        <button onclick="displayInputValue('pwd')">Click me</button>
+    </div>
+
+    <div class="thediv">
+        <p class="twicethesize orange">List of Technologies</p>
+        <ol>
+            <li>Git/GitHub</li>
+            <li>SQL</li>
+            <li id="green">C#</li>
+            <li>HTML/CSS/JS</li>
+            <li>Angular</li>
+        </ol>
+        <ul>
+            <li>Git/GitHub</li>
+            <li>SQL</li>
+            <li>C#</li>
+            <li>HTML/CSS/JS</li>
+            <li class="orange">Angular</li>
+        </ul>
+    </div>
+
+    <div style="display:none;">
         <table>
-            <thead>
-                <tr>
-                    <td>Name</td>
-                    <td>Color</td>
-                    <td>Number</td>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Lidya</td>
-                    <td>Green</td>
-                    <td>8</td>
-                </tr>
-                <tr>
-                    <td>Tricia</td>
-                    <td>Blue</td>
-                    <td>17</td>
-                </tr>
-                <tr>
-                    <td>Alex</td>
-                    <td>Blue</td>
-                    <td>101</td>
-                </tr>
-                <tr>
-                    <td>Jeremy</td>
-                    <td>Purple</td>
-                    <td>13</td>
-                </tr>
-                <tr>
-                    <td>Justin</td>
-                    <td>Red</td>
-                    <td>18</td>
-                </tr>
-                <tr>
-                    <td>Nick</td>
-                    <td>White</td>
-                    <td>4</td>
-                </tr>
-                <tr>
-                    <td>Phil</td>
-                    <td>Yello</td>
-                    <td>29</td>
-                </tr>
-            </tbody>
-            <tfoot></tfoot>
+            <tr>
+                <th>Technology</th>
+                <th>Description</th>
+                <th>Comment</th>
+            </tr>
+            <tr>
+                <td>Git/GitHub</td>
+                <td>Source Control Management</td>
+                <td>This is an excellent tool and it being adopted
+                    throughout the programming world.</td>
+            </tr>
+            <tr>
+                <td>SQL</td>
+                <td>SQL Database</td>
+                <td>Provides excellent data management</td>
+            </tr>
+            <tr>
+                <td>C#</td>
+                <td>General Purpose Programming Language</td>
+                <td>It is easy to learn and the author keeps adding features.</td>
+            </tr>
+            <tr>
+                <td>HTML/CSS/JS</td>
+                <td>Web Programming Technology</td>
+                <td>If you want to program on the web, you need to know these.</td>
+            </tr>
+            <tr>
+                <td>Angular</td>
+                <td>Full-features Javascript Framework from Google</td>
+                <td>This software is IT for web programming.</td>
+            </tr>
         </table>
+        <hr>
+    </div>
+    <table>
+        <thead>
+            <tr>
+                <td>Name</td>
+                <td>Color</td>
+                <td>Number</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Lidya</td>
+                <td>Green</td>
+                <td>8</td>
+            </tr>
+            <tr>
+                <td>Tricia</td>
+                <td>Blue</td>
+                <td>17</td>
+            </tr>
+            <tr>
+                <td>Alex</td>
+                <td>Blue</td>
+                <td>101</td>
+            </tr>
+            <tr>
+                <td>Jeremy</td>
+                <td>Purple</td>
+                <td>13</td>
+            </tr>
+            <tr>
+                <td>Justin</td>
+                <td>Red</td>
+                <td>18</td>
+            </tr>
+            <tr>
+                <td>Nick</td>
+                <td>White</td>
+                <td>4</td>
+            </tr>
+            <tr>
+                <td>Phil</td>
+                <td>Yello</td>
+                <td>29</td>
+            </tr>
+        </tbody>
+        <tfoot></tfoot>
+    </table>
 
-        <p>
-            <span>When i finish the boot camp,</span>
-            <a href="http://www.amazon.com" target="_blank">I want to shop at Amazon</a>
-        </p>
-        
-        <p>This is paragraph 1</p>
-        <p>
-            This is paragraph 2
-        </p>
+    <p>
+        <span>When i finish the boot camp,</span>
+        <a href="http://www.amazon.com" target="_blank">I want to shop at Amazon</a>
+    </p>
 
-        <span>This is span 1</span>
-        <span>
-            This is span2
-        </span>
+    <p>This is paragraph 1</p>
+    <p>
+        This is paragraph 2
+    </p>
 
-        <p>
-            <span>Greg Doud</span><br>
-            <span>4900 Parkway Dr.</span><br>
-            <span>Mason, OH 45040</span>
-        </p>
-        <address>
-            <span>Greg Doud</span><br>
-            <span>4900 Parkway Dr.</span><br>
-            <span>Mason, OH 45040</span>
-        </address>
+    <span>This is span 1</span>
+    <span>
+        This is span2
+    </span>
 
-    </body>
+    <p>
+        <span>Greg Doud</span><br>
+        <span>4900 Parkway Dr.</span><br>
+        <span>Mason, OH 45040</span>
+    </p>
+    <address>
+        <span>Greg Doud</span><br>
+        <span>4900 Parkway Dr.</span><br>
+        <span>Mason, OH 45040</span>
+    </address>
+
+</body>
+
 </html>
